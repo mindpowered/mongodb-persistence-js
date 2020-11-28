@@ -1,0 +1,13 @@
+{
+    "name": "@mindpowered/mongodb-persistence",
+    "description": "MongoDB Persistence",
+    "license": "CPAL-1.0",
+    "dependencies": {
+        "@mindpowered/maglev": "*",
+        "mongodb": "*"
+    },
+    "main": "index.js",
+    "files": [
+        "lib"
+    ]
+}

@@ -1,0 +1,1 @@
+module.exports.Persistence = require('./Persistence.js');
