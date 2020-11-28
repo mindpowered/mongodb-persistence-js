@@ -12,7 +12,7 @@ const persistence = require('../lib/persistence.js');
  */
 class Persistence {
 	constructor() {
-		let bus = maglev.maglev.MagLev.getInstance('persistence');
+		let bus = maglev.maglev.MagLev.getInstance('default');
 		let lib = new persistence.persistence.Persistence(bus);
 	}
 
@@ -22,7 +22,7 @@ class Persistence {
 	 * @return {Promise}  Promise will resolve to type string.
 	*/
 	EnglishAuction_Auction_CreateNew() {
-		let jsbus = maglev.maglev.MagLevJs.getInstance('persistence');
+		let jsbus = maglev.maglev.MagLevJs.getInstance('default');
 		let args = [];
 		let ret = jsbus.call('Persistence.EnglishAuction.Auction.CreateNew', args);
 		return ret;
@@ -32,7 +32,7 @@ class Persistence {
 	 * 
 	*/
 	EnglishAuction_Auction_FindById() {
-		let jsbus = maglev.maglev.MagLevJs.getInstance('persistence');
+		let jsbus = maglev.maglev.MagLevJs.getInstance('default');
 		let args = [];
 		jsbus.call('Persistence.EnglishAuction.Auction.FindById', args);
 	}
@@ -41,7 +41,7 @@ class Persistence {
 	 * 
 	*/
 	EnglishAuction_Auction_FindStarting() {
-		let jsbus = maglev.maglev.MagLevJs.getInstance('persistence');
+		let jsbus = maglev.maglev.MagLevJs.getInstance('default');
 		let args = [];
 		jsbus.call('Persistence.EnglishAuction.Auction.FindStarting', args);
 	}
@@ -50,7 +50,7 @@ class Persistence {
 	 * 
 	*/
 	EnglishAuction_Auction_FindEnding() {
-		let jsbus = maglev.maglev.MagLevJs.getInstance('persistence');
+		let jsbus = maglev.maglev.MagLevJs.getInstance('default');
 		let args = [];
 		jsbus.call('Persistence.EnglishAuction.Auction.FindEnding', args);
 	}
@@ -59,7 +59,7 @@ class Persistence {
 	 * 
 	*/
 	EnglishAuction_Auction_FindOpen() {
-		let jsbus = maglev.maglev.MagLevJs.getInstance('persistence');
+		let jsbus = maglev.maglev.MagLevJs.getInstance('default');
 		let args = [];
 		jsbus.call('Persistence.EnglishAuction.Auction.FindOpen', args);
 	}
@@ -68,7 +68,7 @@ class Persistence {
 	 * 
 	*/
 	EnglishAuction_Bid_CountForAuction() {
-		let jsbus = maglev.maglev.MagLevJs.getInstance('persistence');
+		let jsbus = maglev.maglev.MagLevJs.getInstance('default');
 		let args = [];
 		jsbus.call('Persistence.EnglishAuction.Bid.CountForAuction', args);
 	}
@@ -77,7 +77,7 @@ class Persistence {
 	 * 
 	*/
 	EnglishAuction_Bid_FindByHighestPriceForAuction() {
-		let jsbus = maglev.maglev.MagLevJs.getInstance('persistence');
+		let jsbus = maglev.maglev.MagLevJs.getInstance('default');
 		let args = [];
 		jsbus.call('Persistence.EnglishAuction.Bid.FindByHighestPriceForAuction', args);
 	}
@@ -86,7 +86,7 @@ class Persistence {
 	 * 
 	*/
 	EnglishAuction_Bid_New() {
-		let jsbus = maglev.maglev.MagLevJs.getInstance('persistence');
+		let jsbus = maglev.maglev.MagLevJs.getInstance('default');
 		let args = [];
 		jsbus.call('Persistence.EnglishAuction.Bid.New', args);
 	}
