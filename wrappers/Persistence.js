@@ -18,12 +18,12 @@ class Persistence {
 
 	/**
 	 * 
-	 * @param {object}  
+	 * @param {object} obj 
 	 * @return {Promise}  Promise will resolve to type string.
 	*/
-	EnglishAuction_Auction_CreateNew() {
+	EnglishAuction_Auction_CreateNew(obj) {
 		let jsbus = maglev.maglev.MagLevJs.getInstance('default');
-		let args = [];
+		let args = [obj];
 		let ret = jsbus.call('Persistence.EnglishAuction.Auction.CreateNew', args);
 		return ret;
 	}
